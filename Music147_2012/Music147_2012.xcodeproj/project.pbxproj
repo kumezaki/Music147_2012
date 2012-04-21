@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		217658A115431102007240DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217658A015431102007240DF /* UIKit.framework */; };
+		217658A315431102007240DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217658A215431102007240DF /* Foundation.framework */; };
+		217658A515431102007240DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217658A415431102007240DF /* CoreGraphics.framework */; };
+		217658AB15431102007240DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 217658A915431102007240DF /* InfoPlist.strings */; };
+		217658AD15431102007240DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 217658AC15431102007240DF /* main.m */; };
+		217658B115431102007240DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 217658B015431102007240DF /* AppDelegate.m */; };
+		217658B415431103007240DF /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 217658B215431103007240DF /* MainStoryboard_iPhone.storyboard */; };
+		217658B715431103007240DF /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 217658B515431103007240DF /* MainStoryboard_iPad.storyboard */; };
+		217658BA15431103007240DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217658B915431103007240DF /* ViewController.m */; };
+		217658C215431103007240DF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217658C115431103007240DF /* SenTestingKit.framework */; };
+		217658C315431103007240DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217658A015431102007240DF /* UIKit.framework */; };
+		217658C415431103007240DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217658A215431102007240DF /* Foundation.framework */; };
+		217658CC15431103007240DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 217658CA15431103007240DF /* InfoPlist.strings */; };
+		217658CF15431103007240DF /* Music147_2012Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 217658CE15431103007240DF /* Music147_2012Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		217658C515431103007240DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2176589315431102007240DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2176589B15431102007240DF;
+			remoteInfo = Music147_2012;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2176589C15431102007240DF /* Music147_2012.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Music147_2012.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		217658A015431102007240DF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		217658A215431102007240DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		217658A415431102007240DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		217658A815431102007240DF /* Music147_2012-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Music147_2012-Info.plist"; sourceTree = "<group>"; };
+		217658AA15431102007240DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		217658AC15431102007240DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		217658AE15431102007240DF /* Music147_2012-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Music147_2012-Prefix.pch"; sourceTree = "<group>"; };
+		217658AF15431102007240DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		217658B015431102007240DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		217658B315431103007240DF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		217658B615431103007240DF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		217658B815431103007240DF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		217658B915431103007240DF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		217658C015431103007240DF /* Music147_2012Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Music147_2012Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		217658C115431103007240DF /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		217658C915431103007240DF /* Music147_2012Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Music147_2012Tests-Info.plist"; sourceTree = "<group>"; };
+		217658CB15431103007240DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		217658CD15431103007240DF /* Music147_2012Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Music147_2012Tests.h; sourceTree = "<group>"; };
+		217658CE15431103007240DF /* Music147_2012Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Music147_2012Tests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2176589915431102007240DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				217658A115431102007240DF /* UIKit.framework in Frameworks */,
+				217658A315431102007240DF /* Foundation.framework in Frameworks */,
+				217658A515431102007240DF /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		217658BC15431103007240DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				217658C215431103007240DF /* SenTestingKit.framework in Frameworks */,
+				217658C315431103007240DF /* UIKit.framework in Frameworks */,
+				217658C415431103007240DF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2176589115431102007240DF = {
+			isa = PBXGroup;
+			children = (
+				217658A615431102007240DF /* Music147_2012 */,
+				217658C715431103007240DF /* Music147_2012Tests */,
+				2176589F15431102007240DF /* Frameworks */,
+				2176589D15431102007240DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2176589D15431102007240DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2176589C15431102007240DF /* Music147_2012.app */,
+				217658C015431103007240DF /* Music147_2012Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2176589F15431102007240DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				217658A015431102007240DF /* UIKit.framework */,
+				217658A215431102007240DF /* Foundation.framework */,
+				217658A415431102007240DF /* CoreGraphics.framework */,
+				217658C115431103007240DF /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		217658A615431102007240DF /* Music147_2012 */ = {
+			isa = PBXGroup;
+			children = (
+				217658AF15431102007240DF /* AppDelegate.h */,
+				217658B015431102007240DF /* AppDelegate.m */,
+				217658B215431103007240DF /* MainStoryboard_iPhone.storyboard */,
+				217658B515431103007240DF /* MainStoryboard_iPad.storyboard */,
+				217658B815431103007240DF /* ViewController.h */,
+				217658B915431103007240DF /* ViewController.m */,
+				217658A715431102007240DF /* Supporting Files */,
+			);
+			path = Music147_2012;
+			sourceTree = "<group>";
+		};
+		217658A715431102007240DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				217658A815431102007240DF /* Music147_2012-Info.plist */,
+				217658A915431102007240DF /* InfoPlist.strings */,
+				217658AC15431102007240DF /* main.m */,
+				217658AE15431102007240DF /* Music147_2012-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		217658C715431103007240DF /* Music147_2012Tests */ = {
+			isa = PBXGroup;
+			children = (
+				217658CD15431103007240DF /* Music147_2012Tests.h */,
+				217658CE15431103007240DF /* Music147_2012Tests.m */,
+				217658C815431103007240DF /* Supporting Files */,
+			);
+			path = Music147_2012Tests;
+			sourceTree = "<group>";
+		};
+		217658C815431103007240DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				217658C915431103007240DF /* Music147_2012Tests-Info.plist */,
+				217658CA15431103007240DF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2176589B15431102007240DF /* Music147_2012 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 217658D215431103007240DF /* Build configuration list for PBXNativeTarget "Music147_2012" */;
+			buildPhases = (
+				2176589815431102007240DF /* Sources */,
+				2176589915431102007240DF /* Frameworks */,
+				2176589A15431102007240DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Music147_2012;
+			productName = Music147_2012;
+			productReference = 2176589C15431102007240DF /* Music147_2012.app */;
+			productType = "com.apple.product-type.application";
+		};
+		217658BF15431103007240DF /* Music147_2012Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 217658D515431103007240DF /* Build configuration list for PBXNativeTarget "Music147_2012Tests" */;
+			buildPhases = (
+				217658BB15431103007240DF /* Sources */,
+				217658BC15431103007240DF /* Frameworks */,
+				217658BD15431103007240DF /* Resources */,
+				217658BE15431103007240DF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				217658C615431103007240DF /* PBXTargetDependency */,
+			);
+			name = Music147_2012Tests;
+			productName = Music147_2012Tests;
+			productReference = 217658C015431103007240DF /* Music147_2012Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2176589315431102007240DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 2176589615431102007240DF /* Build configuration list for PBXProject "Music147_2012" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2176589115431102007240DF;
+			productRefGroup = 2176589D15431102007240DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2176589B15431102007240DF /* Music147_2012 */,
+				217658BF15431103007240DF /* Music147_2012Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2176589A15431102007240DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				217658AB15431102007240DF /* InfoPlist.strings in Resources */,
+				217658B415431103007240DF /* MainStoryboard_iPhone.storyboard in Resources */,
+				217658B715431103007240DF /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		217658BD15431103007240DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				217658CC15431103007240DF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		217658BE15431103007240DF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2176589815431102007240DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				217658AD15431102007240DF /* main.m in Sources */,
+				217658B115431102007240DF /* AppDelegate.m in Sources */,
+				217658BA15431103007240DF /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		217658BB15431103007240DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				217658CF15431103007240DF /* Music147_2012Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		217658C615431103007240DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2176589B15431102007240DF /* Music147_2012 */;
+			targetProxy = 217658C515431103007240DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		217658A915431102007240DF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				217658AA15431102007240DF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		217658B215431103007240DF /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				217658B315431103007240DF /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		217658B515431103007240DF /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				217658B615431103007240DF /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		217658CA15431103007240DF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				217658CB15431103007240DF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		217658D015431103007240DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		217658D115431103007240DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		217658D315431103007240DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Music147_2012/Music147_2012-Prefix.pch";
+				INFOPLIST_FILE = "Music147_2012/Music147_2012-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		217658D415431103007240DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Music147_2012/Music147_2012-Prefix.pch";
+				INFOPLIST_FILE = "Music147_2012/Music147_2012-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		217658D615431103007240DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Music147_2012.app/Music147_2012";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Music147_2012/Music147_2012-Prefix.pch";
+				INFOPLIST_FILE = "Music147_2012Tests/Music147_2012Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		217658D715431103007240DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Music147_2012.app/Music147_2012";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Music147_2012/Music147_2012-Prefix.pch";
+				INFOPLIST_FILE = "Music147_2012Tests/Music147_2012Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2176589615431102007240DF /* Build configuration list for PBXProject "Music147_2012" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				217658D015431103007240DF /* Debug */,
+				217658D115431103007240DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		217658D215431103007240DF /* Build configuration list for PBXNativeTarget "Music147_2012" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				217658D315431103007240DF /* Debug */,
+				217658D415431103007240DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		217658D515431103007240DF /* Build configuration list for PBXNativeTarget "Music147_2012Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				217658D615431103007240DF /* Debug */,
+				217658D715431103007240DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2176589315431102007240DF /* Project object */;
+}
