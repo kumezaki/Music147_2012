@@ -21,6 +21,13 @@
 		217658C415431103007240DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217658A215431102007240DF /* Foundation.framework */; };
 		217658CC15431103007240DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 217658CA15431103007240DF /* InfoPlist.strings */; };
 		217658CF15431103007240DF /* Music147_2012Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 217658CE15431103007240DF /* Music147_2012Tests.m */; };
+		217658E2154311F5007240DF /* AQPlayer_SF.m in Sources */ = {isa = PBXBuildFile; fileRef = 217658D9154311F5007240DF /* AQPlayer_SF.m */; };
+		217658E3154311F5007240DF /* AQPlayer_Synth.m in Sources */ = {isa = PBXBuildFile; fileRef = 217658DB154311F5007240DF /* AQPlayer_Synth.m */; };
+		217658E4154311F5007240DF /* AQPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 217658DD154311F5007240DF /* AQPlayer.m */; };
+		217658E5154311F5007240DF /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 217658DF154311F5007240DF /* Singleton.m */; };
+		217658E6154311F5007240DF /* SoundFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 217658E1154311F5007240DF /* SoundFile.m */; };
+		217658E815431252007240DF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217658E715431252007240DF /* AudioToolbox.framework */; };
+		217658EA15431264007240DF /* Music147.aif in Resources */ = {isa = PBXBuildFile; fileRef = 217658E915431264007240DF /* Music147.aif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +61,18 @@
 		217658CB15431103007240DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		217658CD15431103007240DF /* Music147_2012Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Music147_2012Tests.h; sourceTree = "<group>"; };
 		217658CE15431103007240DF /* Music147_2012Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Music147_2012Tests.m; sourceTree = "<group>"; };
+		217658D8154311F5007240DF /* AQPlayer_SF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQPlayer_SF.h; sourceTree = "<group>"; };
+		217658D9154311F5007240DF /* AQPlayer_SF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQPlayer_SF.m; sourceTree = "<group>"; };
+		217658DA154311F5007240DF /* AQPlayer_Synth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQPlayer_Synth.h; sourceTree = "<group>"; };
+		217658DB154311F5007240DF /* AQPlayer_Synth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQPlayer_Synth.m; sourceTree = "<group>"; };
+		217658DC154311F5007240DF /* AQPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQPlayer.h; sourceTree = "<group>"; };
+		217658DD154311F5007240DF /* AQPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQPlayer.m; sourceTree = "<group>"; };
+		217658DE154311F5007240DF /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		217658DF154311F5007240DF /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
+		217658E0154311F5007240DF /* SoundFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundFile.h; sourceTree = "<group>"; };
+		217658E1154311F5007240DF /* SoundFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundFile.m; sourceTree = "<group>"; };
+		217658E715431252007240DF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		217658E915431264007240DF /* Music147.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Music147.aif; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				217658E815431252007240DF /* AudioToolbox.framework in Frameworks */,
 				217658A115431102007240DF /* UIKit.framework in Frameworks */,
 				217658A315431102007240DF /* Foundation.framework in Frameworks */,
 				217658A515431102007240DF /* CoreGraphics.framework in Frameworks */,
@@ -83,6 +103,7 @@
 		2176589115431102007240DF = {
 			isa = PBXGroup;
 			children = (
+				217658E715431252007240DF /* AudioToolbox.framework */,
 				217658A615431102007240DF /* Music147_2012 */,
 				217658C715431103007240DF /* Music147_2012Tests */,
 				2176589F15431102007240DF /* Frameworks */,
@@ -113,6 +134,17 @@
 		217658A615431102007240DF /* Music147_2012 */ = {
 			isa = PBXGroup;
 			children = (
+				217658E915431264007240DF /* Music147.aif */,
+				217658D8154311F5007240DF /* AQPlayer_SF.h */,
+				217658D9154311F5007240DF /* AQPlayer_SF.m */,
+				217658DA154311F5007240DF /* AQPlayer_Synth.h */,
+				217658DB154311F5007240DF /* AQPlayer_Synth.m */,
+				217658DC154311F5007240DF /* AQPlayer.h */,
+				217658DD154311F5007240DF /* AQPlayer.m */,
+				217658DE154311F5007240DF /* Singleton.h */,
+				217658DF154311F5007240DF /* Singleton.m */,
+				217658E0154311F5007240DF /* SoundFile.h */,
+				217658E1154311F5007240DF /* SoundFile.m */,
 				217658AF15431102007240DF /* AppDelegate.h */,
 				217658B015431102007240DF /* AppDelegate.m */,
 				217658B215431103007240DF /* MainStoryboard_iPhone.storyboard */,
@@ -227,6 +259,7 @@
 				217658AB15431102007240DF /* InfoPlist.strings in Resources */,
 				217658B415431103007240DF /* MainStoryboard_iPhone.storyboard in Resources */,
 				217658B715431103007240DF /* MainStoryboard_iPad.storyboard in Resources */,
+				217658EA15431264007240DF /* Music147.aif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +297,11 @@
 				217658AD15431102007240DF /* main.m in Sources */,
 				217658B115431102007240DF /* AppDelegate.m in Sources */,
 				217658BA15431103007240DF /* ViewController.m in Sources */,
+				217658E2154311F5007240DF /* AQPlayer_SF.m in Sources */,
+				217658E3154311F5007240DF /* AQPlayer_Synth.m in Sources */,
+				217658E4154311F5007240DF /* AQPlayer.m in Sources */,
+				217658E5154311F5007240DF /* Singleton.m in Sources */,
+				217658E6154311F5007240DF /* SoundFile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

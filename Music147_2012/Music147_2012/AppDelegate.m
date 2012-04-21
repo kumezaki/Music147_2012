@@ -10,11 +10,17 @@
 
 @implementation AppDelegate
 
+#import "Singleton.h"
+Singleton* gSing = nil;
+
 @synthesize window = _window;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    gSing = [[Singleton alloc] init];
+
     return YES;
 }
 							
