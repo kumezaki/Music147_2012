@@ -8,7 +8,11 @@
 
 #import "AQPlayer.h"
 
+#import "Singleton.h"
+
 AQPlayer *aqp = nil;
+
+extern Singleton* gSing;
 
 void AQBufferCallback(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRef inAQBuffer);
 
@@ -36,6 +40,10 @@ void AQBufferCallback(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRef 
     
 	/* queue the updated AudioQueueBuffer */
 	AudioQueueEnqueueBuffer(inAQ, inAQBuffer, 0, nil);
+    
+    /* compute and report elapsed time */
+    Float64 elapsed_time = numFrames / kSR;
+    [aqp reportElapsedTime:elapsed_time];
 }
 
 @implementation AQPlayer
@@ -110,5 +118,33 @@ void AQBufferCallback(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRef 
 {
 	NSLog(@"AQPlayer FillAudioBuffer %ld",num_samples);
 }
+
+-(Voice*)getFreeVoice
+{
+    for (UInt16 i = 0; i < kNumberVoices; i++)
+        if (![voices[i] isOn])
+            return voices[i];
+    return nil;
+}
+
+-(void)voiceToggle:(UInt16)pos
+{
+    if ([voices[pos] isOn]) {
+        [voices[pos] off];
+    }
+    else {
+        [voices[pos] on];
+    }
+    
+}
+
+-(void)reportElapsedTime:(Float64)elapsed_time
+{
+    NSLog(@"elapsed time %f",elapsed_time);
+    
+    [gSing updateTime:elapsed_time];
+}
+
+
 
 @end

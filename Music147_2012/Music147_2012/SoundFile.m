@@ -56,7 +56,7 @@
 	for (UInt32 buf_pos = 0; buf_pos < num_buf_samples; buf_pos++)
 	{
 		Float64 s = (SInt16)CFSwapInt16BigToHost(fileBuffer[buf_pos]);
-		buffer[buf_pos] += s / (SInt16)0x7FFF;
+		buffer[buf_pos] += s / INT16_MAX;
 	}
 }
 

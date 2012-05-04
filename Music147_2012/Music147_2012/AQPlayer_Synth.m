@@ -8,27 +8,29 @@
 
 #import "AQPlayer_Synth.h"
 
+#import "Voice_Sine.h"
+
 @implementation AQPlayer_Synth
 
 -(id)init
 {
     self = [super init];
-
-    theta = 0.;
-    deltaTheta = 440./kSR;
+    
+    for (SInt32 i = 0; i < 4; i++)
+    {
+        voices[i] = [[Voice_Sine alloc] init];
+        [voices[i] on];
+        ((Voice_Synth*)voices[i]).freq = [Voice_Synth noteNumToFreq:45+(12*i)];
+    }
     
     return self;
 }
 
 -(void)fillAudioBuffer:(Float64*)buffer:(UInt32)num_samples
 {
-	Float64 amp = 0.5;
-	for (SInt32 i = 0; i < num_samples; i++)
-	{
-		buffer[i] += amp * sin(theta * 2 * M_PI);
-		theta += deltaTheta;
-	}
-
+    for (SInt32 i = 0; i < 4; i++)
+        if (voices[i] != nil)
+            [voices[i] fillSampleBuffer:buffer:num_samples];
 }
 
 @end

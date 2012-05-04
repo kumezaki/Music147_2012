@@ -19,13 +19,25 @@
     
     NSLog(@"Initializing Singleton object.");
     
-    aqp = [[AQPlayer_SF alloc] init];
+    aqp = [[AQPlayer_Synth alloc] init];
+    
+    q = [[Sequencer alloc] init];
+    [q setBpm:133];
+    
+    /* this is temporary just to test the new sequencer code */
+    Sequence* seq = [[Sequence alloc] init];
+    [q setSeq:seq];
     
     return self;
 }
 
 -(void)dealloc
 {
+}
+
+-(void)updateTime:(Float64)elapsed_time
+{
+    [q updateTime:elapsed_time];
 }
 
 @end

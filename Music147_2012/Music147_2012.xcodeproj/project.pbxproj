@@ -28,6 +28,13 @@
 		217658E6154311F5007240DF /* SoundFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 217658E1154311F5007240DF /* SoundFile.m */; };
 		217658E815431252007240DF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217658E715431252007240DF /* AudioToolbox.framework */; };
 		217658EA15431264007240DF /* Music147.aif in Resources */ = {isa = PBXBuildFile; fileRef = 217658E915431264007240DF /* Music147.aif */; };
+		21DBF71015542FCE00533377 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DBF70515542FCE00533377 /* Note.m */; };
+		21DBF71115542FCE00533377 /* Sequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DBF70715542FCE00533377 /* Sequence.m */; };
+		21DBF71215542FCE00533377 /* Sequencer.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DBF70915542FCE00533377 /* Sequencer.m */; };
+		21DBF71315542FCE00533377 /* Voice_Sine.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DBF70B15542FCE00533377 /* Voice_Sine.m */; };
+		21DBF71415542FCE00533377 /* Voice_Synth.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DBF70D15542FCE00533377 /* Voice_Synth.m */; };
+		21DBF71515542FCE00533377 /* Voice.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DBF70F15542FCE00533377 /* Voice.m */; };
+		21DBF71D1554313000533377 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DBF71C1554313000533377 /* MyView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +80,20 @@
 		217658E1154311F5007240DF /* SoundFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundFile.m; sourceTree = "<group>"; };
 		217658E715431252007240DF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		217658E915431264007240DF /* Music147.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Music147.aif; sourceTree = SOURCE_ROOT; };
+		21DBF70415542FCE00533377 /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		21DBF70515542FCE00533377 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
+		21DBF70615542FCE00533377 /* Sequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sequence.h; sourceTree = "<group>"; };
+		21DBF70715542FCE00533377 /* Sequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sequence.m; sourceTree = "<group>"; };
+		21DBF70815542FCE00533377 /* Sequencer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sequencer.h; sourceTree = "<group>"; };
+		21DBF70915542FCE00533377 /* Sequencer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sequencer.m; sourceTree = "<group>"; };
+		21DBF70A15542FCE00533377 /* Voice_Sine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Voice_Sine.h; sourceTree = "<group>"; };
+		21DBF70B15542FCE00533377 /* Voice_Sine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Voice_Sine.m; sourceTree = "<group>"; };
+		21DBF70C15542FCE00533377 /* Voice_Synth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Voice_Synth.h; sourceTree = "<group>"; };
+		21DBF70D15542FCE00533377 /* Voice_Synth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Voice_Synth.m; sourceTree = "<group>"; };
+		21DBF70E15542FCE00533377 /* Voice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Voice.h; sourceTree = "<group>"; };
+		21DBF70F15542FCE00533377 /* Voice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Voice.m; sourceTree = "<group>"; };
+		21DBF71B1554313000533377 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
+		21DBF71C1554313000533377 /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,22 +156,36 @@
 			isa = PBXGroup;
 			children = (
 				217658E915431264007240DF /* Music147.aif */,
+				217658AF15431102007240DF /* AppDelegate.h */,
+				217658B015431102007240DF /* AppDelegate.m */,
 				217658D8154311F5007240DF /* AQPlayer_SF.h */,
 				217658D9154311F5007240DF /* AQPlayer_SF.m */,
 				217658DA154311F5007240DF /* AQPlayer_Synth.h */,
 				217658DB154311F5007240DF /* AQPlayer_Synth.m */,
 				217658DC154311F5007240DF /* AQPlayer.h */,
 				217658DD154311F5007240DF /* AQPlayer.m */,
+				217658B215431103007240DF /* MainStoryboard_iPhone.storyboard */,
+				217658B515431103007240DF /* MainStoryboard_iPad.storyboard */,
+				21DBF71B1554313000533377 /* MyView.h */,
+				21DBF71C1554313000533377 /* MyView.m */,
+				21DBF70415542FCE00533377 /* Note.h */,
+				21DBF70515542FCE00533377 /* Note.m */,
+				21DBF70615542FCE00533377 /* Sequence.h */,
+				21DBF70715542FCE00533377 /* Sequence.m */,
+				21DBF70815542FCE00533377 /* Sequencer.h */,
+				21DBF70915542FCE00533377 /* Sequencer.m */,
 				217658DE154311F5007240DF /* Singleton.h */,
 				217658DF154311F5007240DF /* Singleton.m */,
 				217658E0154311F5007240DF /* SoundFile.h */,
 				217658E1154311F5007240DF /* SoundFile.m */,
-				217658AF15431102007240DF /* AppDelegate.h */,
-				217658B015431102007240DF /* AppDelegate.m */,
-				217658B215431103007240DF /* MainStoryboard_iPhone.storyboard */,
-				217658B515431103007240DF /* MainStoryboard_iPad.storyboard */,
 				217658B815431103007240DF /* ViewController.h */,
 				217658B915431103007240DF /* ViewController.m */,
+				21DBF70A15542FCE00533377 /* Voice_Sine.h */,
+				21DBF70B15542FCE00533377 /* Voice_Sine.m */,
+				21DBF70C15542FCE00533377 /* Voice_Synth.h */,
+				21DBF70D15542FCE00533377 /* Voice_Synth.m */,
+				21DBF70E15542FCE00533377 /* Voice.h */,
+				21DBF70F15542FCE00533377 /* Voice.m */,
 				217658A715431102007240DF /* Supporting Files */,
 			);
 			path = Music147_2012;
@@ -302,6 +337,13 @@
 				217658E4154311F5007240DF /* AQPlayer.m in Sources */,
 				217658E5154311F5007240DF /* Singleton.m in Sources */,
 				217658E6154311F5007240DF /* SoundFile.m in Sources */,
+				21DBF71015542FCE00533377 /* Note.m in Sources */,
+				21DBF71115542FCE00533377 /* Sequence.m in Sources */,
+				21DBF71215542FCE00533377 /* Sequencer.m in Sources */,
+				21DBF71315542FCE00533377 /* Voice_Sine.m in Sources */,
+				21DBF71415542FCE00533377 /* Voice_Synth.m in Sources */,
+				21DBF71515542FCE00533377 /* Voice.m in Sources */,
+				21DBF71D1554313000533377 /* MyView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +523,7 @@
 				217658D415431103007240DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		217658D515431103007240DF /* Build configuration list for PBXNativeTarget "Music147_2012Tests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +532,7 @@
 				217658D715431103007240DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

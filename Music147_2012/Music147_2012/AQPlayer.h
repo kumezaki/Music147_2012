@@ -9,8 +9,13 @@
 #import <AudioToolbox/AudioToolbox.h>
 #import <Foundation/Foundation.h>
 
+#import "Voice.h"
+
 /* number of buffers used by system */
 #define kNumberBuffers	3
+
+/* number of voice */
+#define kNumberVoices   4
 
 /* sample rate */
 #define kSR				22050.
@@ -20,6 +25,8 @@
 	AudioQueueRef				queue;
 	AudioQueueBufferRef			buffers[kNumberBuffers];
 	AudioStreamBasicDescription	dataFormat;
+    
+    Voice* voices[kNumberVoices];
 }
 
 -(void)setup;
@@ -28,5 +35,11 @@
 -(OSStatus)stop;
 
 -(void)fillAudioBuffer:(Float64*)buffer:(UInt32)num_samples;
+
+-(Voice*)getFreeVoice;
+
+-(void)voiceToggle:(UInt16)pos;
+
+-(void)reportElapsedTime:(Float64)elapsed_time;
 
 @end

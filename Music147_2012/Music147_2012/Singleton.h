@@ -9,11 +9,17 @@
 #import <Foundation/Foundation.h>
 
 #import "AQPlayer.h"
+#import "Sequencer.h"
+
 
 @interface Singleton : NSObject {
     
     AQPlayer*   aqp;
     
+    Sequencer*  q;
+    
 }
+
+-(void)updateTime:(Float64)elapsed_time;
 
 @end
