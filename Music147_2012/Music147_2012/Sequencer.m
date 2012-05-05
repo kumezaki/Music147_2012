@@ -26,11 +26,13 @@
     
     now_time += elapsed_beats;
     
-    for (UInt32 i = 0; i < 32; i++)
+    for (UInt32 i = 0; i < kNumSeqNotes; i++)
     {
-        Note* n = [seq getNote:i];
-        if (n != nil)
-            [n updateState:now_time];
+        @autoreleasepool {
+            Note* n = [seq getNote:i];
+            if (n != nil)
+                [n updateState:now_time];
+        }
     }
 }
 

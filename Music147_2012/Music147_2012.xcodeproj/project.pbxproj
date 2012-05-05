@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2104C1061554FAD000E0DA9B /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2104C1051554FAD000E0DA9B /* ViewController_iPhone.xib */; };
+		2104C10C1554FCA900E0DA9B /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2104C10B1554FCA900E0DA9B /* ViewController_iPad.xib */; };
 		217658A115431102007240DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217658A015431102007240DF /* UIKit.framework */; };
 		217658A315431102007240DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217658A215431102007240DF /* Foundation.framework */; };
 		217658A515431102007240DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217658A415431102007240DF /* CoreGraphics.framework */; };
 		217658AB15431102007240DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 217658A915431102007240DF /* InfoPlist.strings */; };
 		217658AD15431102007240DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 217658AC15431102007240DF /* main.m */; };
 		217658B115431102007240DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 217658B015431102007240DF /* AppDelegate.m */; };
-		217658B415431103007240DF /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 217658B215431103007240DF /* MainStoryboard_iPhone.storyboard */; };
-		217658B715431103007240DF /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 217658B515431103007240DF /* MainStoryboard_iPad.storyboard */; };
 		217658BA15431103007240DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217658B915431103007240DF /* ViewController.m */; };
 		217658C215431103007240DF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217658C115431103007240DF /* SenTestingKit.framework */; };
 		217658C315431103007240DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217658A015431102007240DF /* UIKit.framework */; };
@@ -48,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2104C1051554FAD000E0DA9B /* ViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController_iPhone.xib; sourceTree = "<group>"; };
+		2104C10B1554FCA900E0DA9B /* ViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController_iPad.xib; sourceTree = "<group>"; };
 		2176589C15431102007240DF /* Music147_2012.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Music147_2012.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		217658A015431102007240DF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		217658A215431102007240DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,8 +60,6 @@
 		217658AE15431102007240DF /* Music147_2012-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Music147_2012-Prefix.pch"; sourceTree = "<group>"; };
 		217658AF15431102007240DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		217658B015431102007240DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		217658B315431103007240DF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		217658B615431103007240DF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		217658B815431103007240DF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		217658B915431103007240DF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		217658C015431103007240DF /* Music147_2012Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Music147_2012Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +121,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		213A98CD1554F5CE003BBFA4 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
 		2176589115431102007240DF = {
 			isa = PBXGroup;
 			children = (
@@ -164,8 +171,7 @@
 				217658DB154311F5007240DF /* AQPlayer_Synth.m */,
 				217658DC154311F5007240DF /* AQPlayer.h */,
 				217658DD154311F5007240DF /* AQPlayer.m */,
-				217658B215431103007240DF /* MainStoryboard_iPhone.storyboard */,
-				217658B515431103007240DF /* MainStoryboard_iPad.storyboard */,
+				213A98CD1554F5CE003BBFA4 /* New Group */,
 				21DBF71B1554313000533377 /* MyView.h */,
 				21DBF71C1554313000533377 /* MyView.m */,
 				21DBF70415542FCE00533377 /* Note.h */,
@@ -180,6 +186,8 @@
 				217658E1154311F5007240DF /* SoundFile.m */,
 				217658B815431103007240DF /* ViewController.h */,
 				217658B915431103007240DF /* ViewController.m */,
+				2104C1051554FAD000E0DA9B /* ViewController_iPhone.xib */,
+				2104C10B1554FCA900E0DA9B /* ViewController_iPad.xib */,
 				21DBF70A15542FCE00533377 /* Voice_Sine.h */,
 				21DBF70B15542FCE00533377 /* Voice_Sine.m */,
 				21DBF70C15542FCE00533377 /* Voice_Synth.h */,
@@ -292,9 +300,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				217658AB15431102007240DF /* InfoPlist.strings in Resources */,
-				217658B415431103007240DF /* MainStoryboard_iPhone.storyboard in Resources */,
-				217658B715431103007240DF /* MainStoryboard_iPad.storyboard in Resources */,
 				217658EA15431264007240DF /* Music147.aif in Resources */,
+				2104C1061554FAD000E0DA9B /* ViewController_iPhone.xib in Resources */,
+				2104C10C1554FCA900E0DA9B /* ViewController_iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,22 +380,6 @@
 				217658AA15431102007240DF /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		217658B215431103007240DF /* MainStoryboard_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				217658B315431103007240DF /* en */,
-			);
-			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		217658B515431103007240DF /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				217658B615431103007240DF /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		217658CA15431103007240DF /* InfoPlist.strings */ = {
