@@ -12,7 +12,7 @@
 #import "Sequencer.h"
 
 
-@interface Singleton : NSObject {
+@interface Singleton : NSObject <UIAccelerometerDelegate> {
     
     AQPlayer*   aqp;
     
