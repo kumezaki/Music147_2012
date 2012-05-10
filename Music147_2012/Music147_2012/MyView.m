@@ -56,4 +56,41 @@ extern AQPlayer *aqp;
     [aqp voiceToggle:3];
 }
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    NSLog(@"%d",touches.count);
+    for (UITouch* t in touches)
+    {
+        CGPoint pt = [t locationInView:self];
+        NSLog(@"%lf,%lf",pt.x,pt.y);
+    }
+    NSLog(@"%lf",event.timestamp);
+}
+
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    NSLog(@"%d",touches.count);
+    for (UITouch* t in touches)
+    {
+        CGPoint pt = [t locationInView:self];
+        NSLog(@"%lf,%lf",pt.x,pt.y);
+    }
+    NSLog(@"%lf",event.timestamp);
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    NSLog(@"%d",touches.count);
+    for (UITouch* t in touches)
+    {
+        CGPoint pt = [t locationInView:self];
+        NSLog(@"%lf,%lf",pt.x,pt.y);
+    }
+    NSLog(@"%lf",event.timestamp);
+}
+
+- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
+{
+}
+
 @end

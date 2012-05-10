@@ -17,4 +17,9 @@
 -(IBAction)toggleVoice2:(id)sender;
 -(IBAction)toggleVoice3:(id)sender;
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event;
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event;
+- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event;
+
 @end
