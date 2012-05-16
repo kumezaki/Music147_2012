@@ -28,6 +28,7 @@
 		217658E6154311F5007240DF /* SoundFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 217658E1154311F5007240DF /* SoundFile.m */; };
 		217658E815431252007240DF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217658E715431252007240DF /* AudioToolbox.framework */; };
 		217658EA15431264007240DF /* Music147.aif in Resources */ = {isa = PBXBuildFile; fileRef = 217658E915431264007240DF /* Music147.aif */; };
+		217D7784156416E700368F9E /* AQRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 217D7782156416E700368F9E /* AQRecorder.m */; };
 		21DBF71015542FCE00533377 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DBF70515542FCE00533377 /* Note.m */; };
 		21DBF71115542FCE00533377 /* Sequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DBF70715542FCE00533377 /* Sequence.m */; };
 		21DBF71215542FCE00533377 /* Sequencer.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DBF70915542FCE00533377 /* Sequencer.m */; };
@@ -80,6 +81,8 @@
 		217658E1154311F5007240DF /* SoundFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundFile.m; sourceTree = "<group>"; };
 		217658E715431252007240DF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		217658E915431264007240DF /* Music147.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Music147.aif; sourceTree = SOURCE_ROOT; };
+		217D7781156416E700368F9E /* AQRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQRecorder.h; sourceTree = "<group>"; };
+		217D7782156416E700368F9E /* AQRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQRecorder.m; sourceTree = "<group>"; };
 		21DBF70415542FCE00533377 /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
 		21DBF70515542FCE00533377 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
 		21DBF70615542FCE00533377 /* Sequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sequence.h; sourceTree = "<group>"; };
@@ -164,6 +167,8 @@
 				217658DB154311F5007240DF /* AQPlayer_Synth.m */,
 				217658DC154311F5007240DF /* AQPlayer.h */,
 				217658DD154311F5007240DF /* AQPlayer.m */,
+				217D7781156416E700368F9E /* AQRecorder.h */,
+				217D7782156416E700368F9E /* AQRecorder.m */,
 				21DBF71B1554313000533377 /* MyView.h */,
 				21DBF71C1554313000533377 /* MyView.m */,
 				21DBF70415542FCE00533377 /* Note.h */,
@@ -344,6 +349,7 @@
 				21DBF71415542FCE00533377 /* Voice_Synth.m in Sources */,
 				21DBF71515542FCE00533377 /* Voice.m in Sources */,
 				21DBF71D1554313000533377 /* MyView.m in Sources */,
+				217D7784156416E700368F9E /* AQRecorder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
