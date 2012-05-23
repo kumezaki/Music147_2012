@@ -9,8 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface MyView : UIView {
+
     UITouch* touch;
     
+    IBOutlet UIButton* button1;
+    IBOutlet UIButton* button2;
+    IBOutlet UIButton* button3;
+    IBOutlet UIButton* button4;
 }
 
 -(IBAction)toggleVoice0:(id)sender;

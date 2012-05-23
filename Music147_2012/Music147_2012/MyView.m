@@ -23,6 +23,14 @@ extern AQPlayer *aqp;
     return self;
 }
 
+-(void)awakeFromNib
+{
+    [button1 setTitle:@"1" forState:UIControlStateNormal];
+    [button2 setTitle:@"2" forState:UIControlStateNormal];
+    [button3 setTitle:@"3" forState:UIControlStateNormal];
+    [button4 setTitle:@"4" forState:UIControlStateNormal];
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
