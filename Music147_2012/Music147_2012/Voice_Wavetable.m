@@ -66,7 +66,10 @@
         /* s is the interpolated table value */
         Float64 s = s0 + (s1 - s0) * k;
 
-		buffer[i] += amp * s;
+        /* update the envelope by one sample */
+        [env update:1];
+        
+		buffer[i] += amp * env.output * s;
 
 		theta += deltaTheta;
 	}

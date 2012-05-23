@@ -11,6 +11,7 @@
 @implementation Voice
 
 @synthesize amp;
+@synthesize env;
 
 -(id)init
 {
@@ -19,6 +20,10 @@
     on = NO;
     amp = 0.;
     
+	env = [[Envelope alloc] init];
+	env.attack = 0.05;
+	env.release = 0.05;
+
     return self;
 }
 
@@ -26,8 +31,21 @@
 {
 }
 
--(BOOL)isOn { return on; }
--(void)on { on = YES; amp = 0.25; }
--(void)off { on = NO; amp = 0.; }
+-(BOOL)isOn
+{
+    return on;
+}
+
+-(void)on
+{
+    on = YES; amp = 0.25;
+    [env on];
+}
+
+-(void)off
+{
+    on = NO; amp = 0.;
+    [env off];
+}
 
 @end
