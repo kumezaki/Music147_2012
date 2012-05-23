@@ -62,7 +62,7 @@ extern AQPlayer *aqp;
     for (UITouch* t in touches)
     {
         CGPoint pt = [t locationInView:self];
-        NSLog(@"%lf,%lf",pt.x,pt.y);
+        NSLog(@"%lf,%lf,%lf,%lf",pt.x,pt.y,self.bounds.size.width,self.bounds.size.height);
         touch = t;
     }
     NSLog(@"%lf",event.timestamp);
@@ -75,7 +75,7 @@ extern AQPlayer *aqp;
     for (UITouch* t in touches)
     {
         CGPoint pt = [t locationInView:self];
-        NSLog(@"%lf,%lf",pt.x,pt.y);
+        NSLog(@"%lf,%lf,%lf,%lf",pt.x,pt.y,self.bounds.size.width,self.bounds.size.height);
         touch = t;
     }
     NSLog(@"%lf",event.timestamp);
@@ -88,7 +88,7 @@ extern AQPlayer *aqp;
     for (UITouch* t in touches)
     {
         CGPoint pt = [t locationInView:self];
-        NSLog(@"%lf,%lf",pt.x,pt.y);
+        NSLog(@"%lf,%lf,%lf,%lf",pt.x,pt.y,self.bounds.size.width,self.bounds.size.height);
         touch = nil;
     }
     NSLog(@"%lf",event.timestamp);
