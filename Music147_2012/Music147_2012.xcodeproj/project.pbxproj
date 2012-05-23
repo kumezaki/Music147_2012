@@ -31,6 +31,8 @@
 		217D7784156416E700368F9E /* AQRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 217D7782156416E700368F9E /* AQRecorder.m */; };
 		21DACACA156D217900FA81BB /* Voice_Wavetable.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DACAC9156D217900FA81BB /* Voice_Wavetable.m */; };
 		21DACACE156D2E0D00FA81BB /* Envelope.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DACACD156D2E0D00FA81BB /* Envelope.m */; };
+		21DACAD1156D3EB500FA81BB /* Effect.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DACAD0156D3EB500FA81BB /* Effect.m */; };
+		21DACAD4156D3F8000FA81BB /* Effect_Limiter.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DACAD3156D3F7F00FA81BB /* Effect_Limiter.m */; };
 		21DBF71015542FCE00533377 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DBF70515542FCE00533377 /* Note.m */; };
 		21DBF71115542FCE00533377 /* Sequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DBF70715542FCE00533377 /* Sequence.m */; };
 		21DBF71215542FCE00533377 /* Sequencer.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DBF70915542FCE00533377 /* Sequencer.m */; };
@@ -89,6 +91,10 @@
 		21DACAC9156D217900FA81BB /* Voice_Wavetable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Voice_Wavetable.m; sourceTree = "<group>"; };
 		21DACACC156D2E0D00FA81BB /* Envelope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Envelope.h; sourceTree = "<group>"; };
 		21DACACD156D2E0D00FA81BB /* Envelope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Envelope.m; sourceTree = "<group>"; };
+		21DACACF156D3EB500FA81BB /* Effect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Effect.h; sourceTree = "<group>"; };
+		21DACAD0156D3EB500FA81BB /* Effect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Effect.m; sourceTree = "<group>"; };
+		21DACAD2156D3F7F00FA81BB /* Effect_Limiter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Effect_Limiter.h; sourceTree = "<group>"; };
+		21DACAD3156D3F7F00FA81BB /* Effect_Limiter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Effect_Limiter.m; sourceTree = "<group>"; };
 		21DBF70415542FCE00533377 /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
 		21DBF70515542FCE00533377 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
 		21DBF70615542FCE00533377 /* Sequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sequence.h; sourceTree = "<group>"; };
@@ -175,6 +181,10 @@
 				217658DD154311F5007240DF /* AQPlayer.m */,
 				217D7781156416E700368F9E /* AQRecorder.h */,
 				217D7782156416E700368F9E /* AQRecorder.m */,
+				21DACACF156D3EB500FA81BB /* Effect.h */,
+				21DACAD0156D3EB500FA81BB /* Effect.m */,
+				21DACAD2156D3F7F00FA81BB /* Effect_Limiter.h */,
+				21DACAD3156D3F7F00FA81BB /* Effect_Limiter.m */,
 				21DACACC156D2E0D00FA81BB /* Envelope.h */,
 				21DACACD156D2E0D00FA81BB /* Envelope.m */,
 				21DBF71B1554313000533377 /* MyView.h */,
@@ -362,6 +372,8 @@
 				217D7784156416E700368F9E /* AQRecorder.m in Sources */,
 				21DACACA156D217900FA81BB /* Voice_Wavetable.m in Sources */,
 				21DACACE156D2E0D00FA81BB /* Envelope.m in Sources */,
+				21DACAD1156D3EB500FA81BB /* Effect.m in Sources */,
+				21DACAD4156D3F8000FA81BB /* Effect_Limiter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
