@@ -11,6 +11,7 @@
 #import "Voice_Sine.h"
 #import "Voice_Wavetable.h"
 
+#import "Effect_Biquad.h"
 #import "Effect_Limiter.h"
 
 @implementation AQPlayer_Synth
@@ -27,8 +28,11 @@
     }
     
     effect[0] = [[Effect_Limiter alloc] init];
-    ((Effect_Limiter*)effect[0]).max_amp = 0.05;
-    
+    ((Effect_Limiter*)effect[0]).max_amp = 1.0;
+
+    effect[1] = [[Effect_Biquad alloc] init];
+    [((Effect_Biquad*)effect[1]) biQuad_set:LPF:0.:5000.:kSR:1];
+
     return self;
 }
 

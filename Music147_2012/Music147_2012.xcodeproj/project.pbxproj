@@ -33,6 +33,7 @@
 		21DACACE156D2E0D00FA81BB /* Envelope.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DACACD156D2E0D00FA81BB /* Envelope.m */; };
 		21DACAD1156D3EB500FA81BB /* Effect.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DACAD0156D3EB500FA81BB /* Effect.m */; };
 		21DACAD4156D3F8000FA81BB /* Effect_Limiter.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DACAD3156D3F7F00FA81BB /* Effect_Limiter.m */; };
+		21DACAD7156D463000FA81BB /* Effect_Biquad.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DACAD6156D463000FA81BB /* Effect_Biquad.m */; };
 		21DBF71015542FCE00533377 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DBF70515542FCE00533377 /* Note.m */; };
 		21DBF71115542FCE00533377 /* Sequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DBF70715542FCE00533377 /* Sequence.m */; };
 		21DBF71215542FCE00533377 /* Sequencer.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DBF70915542FCE00533377 /* Sequencer.m */; };
@@ -95,6 +96,8 @@
 		21DACAD0156D3EB500FA81BB /* Effect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Effect.m; sourceTree = "<group>"; };
 		21DACAD2156D3F7F00FA81BB /* Effect_Limiter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Effect_Limiter.h; sourceTree = "<group>"; };
 		21DACAD3156D3F7F00FA81BB /* Effect_Limiter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Effect_Limiter.m; sourceTree = "<group>"; };
+		21DACAD5156D463000FA81BB /* Effect_Biquad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Effect_Biquad.h; sourceTree = "<group>"; };
+		21DACAD6156D463000FA81BB /* Effect_Biquad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Effect_Biquad.m; sourceTree = "<group>"; };
 		21DBF70415542FCE00533377 /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
 		21DBF70515542FCE00533377 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
 		21DBF70615542FCE00533377 /* Sequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sequence.h; sourceTree = "<group>"; };
@@ -183,6 +186,8 @@
 				217D7782156416E700368F9E /* AQRecorder.m */,
 				21DACACF156D3EB500FA81BB /* Effect.h */,
 				21DACAD0156D3EB500FA81BB /* Effect.m */,
+				21DACAD5156D463000FA81BB /* Effect_Biquad.h */,
+				21DACAD6156D463000FA81BB /* Effect_Biquad.m */,
 				21DACAD2156D3F7F00FA81BB /* Effect_Limiter.h */,
 				21DACAD3156D3F7F00FA81BB /* Effect_Limiter.m */,
 				21DACACC156D2E0D00FA81BB /* Envelope.h */,
@@ -374,6 +379,7 @@
 				21DACACE156D2E0D00FA81BB /* Envelope.m in Sources */,
 				21DACAD1156D3EB500FA81BB /* Effect.m in Sources */,
 				21DACAD4156D3F8000FA81BB /* Effect_Limiter.m in Sources */,
+				21DACAD7156D463000FA81BB /* Effect_Biquad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
