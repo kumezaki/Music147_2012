@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface MyView : UIView {
+    UITouch* touch;
     
 }
 
@@ -21,5 +22,7 @@
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event;
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event;
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event;
+
+- (void)drawRect:(CGRect)draw_rect;
 
 @end

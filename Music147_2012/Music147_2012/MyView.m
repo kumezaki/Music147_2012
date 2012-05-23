@@ -63,8 +63,10 @@ extern AQPlayer *aqp;
     {
         CGPoint pt = [t locationInView:self];
         NSLog(@"%lf,%lf",pt.x,pt.y);
+        touch = t;
     }
     NSLog(@"%lf",event.timestamp);
+    [self setNeedsDisplay];
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
@@ -74,8 +76,10 @@ extern AQPlayer *aqp;
     {
         CGPoint pt = [t locationInView:self];
         NSLog(@"%lf,%lf",pt.x,pt.y);
+        touch = t;
     }
     NSLog(@"%lf",event.timestamp);
+    [self setNeedsDisplay];
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
@@ -85,12 +89,25 @@ extern AQPlayer *aqp;
     {
         CGPoint pt = [t locationInView:self];
         NSLog(@"%lf,%lf",pt.x,pt.y);
+        touch = nil;
     }
     NSLog(@"%lf",event.timestamp);
+    [self setNeedsDisplay];
 }
 
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
 {
+}
+
+- (void)drawRect:(CGRect)draw_rect
+{
+    if (touch == nil) return; /* guard */
+    
+    UIColor *rectColor = [UIColor greenColor]; [rectColor set];
+    
+    CGPoint pt = [touch locationInView:self];
+    
+    UIRectFill(CGRectMake(pt.x-50., pt.y-50., 100.0, 100.0));
 }
 
 @end

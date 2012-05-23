@@ -8,7 +8,7 @@
 
 #import "Voice_Sine.h"
 
-#import "AQplayer.h"
+#import "AQPlayer.h"
 
 @implementation Voice_Sine
 
