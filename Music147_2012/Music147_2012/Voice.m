@@ -17,7 +17,6 @@
 {
     self = [super init];
     
-    on = NO;
     amp = 0.;
     
 	env = [[Envelope alloc] init];
@@ -33,18 +32,16 @@
 
 -(BOOL)isOn
 {
-    return on;
+    return env.output > 0.;
 }
 
 -(void)on
 {
-    on = YES; amp = 0.25;
     [env on];
 }
 
 -(void)off
 {
-    on = NO; amp = 0.;
     [env off];
 }
 

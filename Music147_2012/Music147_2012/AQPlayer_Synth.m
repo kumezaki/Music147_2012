@@ -27,11 +27,11 @@
         ((Voice_Synth*)voices[i]).freq = [Voice_Synth noteNumToFreq:45+(12*i)];
     }
     
-    effect[0] = [[Effect_Limiter alloc] init];
-    ((Effect_Limiter*)effect[0]).max_amp = 1.0;
+    effect[0] = [[Effect_Biquad alloc] init];
+    [((Effect_Biquad*)effect[0]) biQuad_set:LPF:0.:5000.:kSR:1.0];
 
-    effect[1] = [[Effect_Biquad alloc] init];
-    [((Effect_Biquad*)effect[1]) biQuad_set:LPF:0.:5000.:kSR:1];
+    effect[1] = [[Effect_Limiter alloc] init];
+    ((Effect_Limiter*)effect[1]).max_amp = 1.0;
 
     return self;
 }
@@ -46,5 +46,12 @@
         if (effect[i] != nil)
             [effect[i] process:buffer:num_samples];
 }
+
+-(void)filterFreq:(Float64)freq
+{
+    NSLog(@"filterFreq %lf",freq);
+    [((Effect_Biquad*)effect[0]) biQuad_set:LPF:0.:freq:kSR:1.0];
+}
+
 
 @end

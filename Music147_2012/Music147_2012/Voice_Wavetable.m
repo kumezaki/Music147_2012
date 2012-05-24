@@ -50,14 +50,17 @@
 {
     deltaTheta = freq / kSR;
     
-	for (SInt32 i = 0; i < num_samples; i++)
+	for (SInt32 n = 0; n < num_samples; n++)
 	{
-        /* i0 is the "lower" index; i1 is the "higher" index */   
-        SInt32 i0 = (SInt32)(theta * kWaveTableSize) % kWaveTableSize;
+        /* i is the floating point index into the wavetable */
+        Float64 i = theta * kWaveTableSize;
+        
+        /* i0 is the "lower" index; i1 is the "higher" index */
+        SInt32 i0 = (SInt32)i % kWaveTableSize;
         SInt32 i1 = (i0 + 1) % kWaveTableSize;
         
         /* k is the fractional amount between i0 and i1 */
-        Float64 k = theta - (SInt32)theta;
+        Float64 k = i - (SInt32)i;
         
         /* s0 and s1 are table values at i0 and i1, respectively */
         Float64 s0 = table[i0];
@@ -69,7 +72,7 @@
         /* update the envelope by one sample */
         [env update:1];
         
-		buffer[i] += amp * env.output * s;
+		buffer[n] += amp * env.output * s;
 
 		theta += deltaTheta;
 	}

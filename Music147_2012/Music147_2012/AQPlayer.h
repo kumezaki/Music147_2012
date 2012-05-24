@@ -19,7 +19,7 @@
 #define kNumberVoices   4
 
 /* number of effects */
-#define kNumberEffects  4
+#define kNumberEffects  8
 
 /* sample rate */
 #define kSR				22050.

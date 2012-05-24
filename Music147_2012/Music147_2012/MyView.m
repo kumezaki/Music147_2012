@@ -9,8 +9,10 @@
 #import "MyView.h"
 
 #import "AQPlayer.h"
+#import "Singleton.h"
 
 extern AQPlayer *aqp;
+extern Singleton* gSing;
 
 @implementation MyView
 
@@ -70,7 +72,9 @@ extern AQPlayer *aqp;
     for (UITouch* t in touches)
     {
         CGPoint pt = [t locationInView:self];
-        NSLog(@"%lf,%lf,%lf,%lf",pt.x,pt.y,self.bounds.size.width,self.bounds.size.height);
+//        NSLog(@"%lf,%lf,%lf,%lf",pt.x,pt.y,self.bounds.size.width,self.bounds.size.height);
+        NSLog(@"%lf,%lf",pt.x/self.bounds.size.width,pt.y/self.bounds.size.height);
+        [gSing touchX:pt.x/self.bounds.size.width];
         touch = t;
     }
     NSLog(@"%lf",event.timestamp);
@@ -83,7 +87,9 @@ extern AQPlayer *aqp;
     for (UITouch* t in touches)
     {
         CGPoint pt = [t locationInView:self];
-        NSLog(@"%lf,%lf,%lf,%lf",pt.x,pt.y,self.bounds.size.width,self.bounds.size.height);
+//        NSLog(@"%lf,%lf,%lf,%lf",pt.x,pt.y,self.bounds.size.width,self.bounds.size.height);
+        NSLog(@"%lf,%lf",pt.x/self.bounds.size.width,pt.y/self.bounds.size.height);
+        [gSing touchX:pt.x/self.bounds.size.width];
         touch = t;
     }
     NSLog(@"%lf",event.timestamp);
@@ -96,7 +102,9 @@ extern AQPlayer *aqp;
     for (UITouch* t in touches)
     {
         CGPoint pt = [t locationInView:self];
-        NSLog(@"%lf,%lf,%lf,%lf",pt.x,pt.y,self.bounds.size.width,self.bounds.size.height);
+//        NSLog(@"%lf,%lf,%lf,%lf",pt.x,pt.y,self.bounds.size.width,self.bounds.size.height);
+        NSLog(@"%lf,%lf",pt.x/self.bounds.size.width,pt.y/self.bounds.size.height);
+        [gSing touchX:pt.x/self.bounds.size.width];
         touch = nil;
     }
     NSLog(@"%lf",event.timestamp);

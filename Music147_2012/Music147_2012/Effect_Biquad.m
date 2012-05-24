@@ -37,6 +37,10 @@
     
     b = malloc(sizeof(biquad));
 
+    /* zero initial samples */
+    b->x1 = b->x2 = 0;
+    b->y1 = b->y2 = 0;
+
     return self;
 }
 
@@ -143,10 +147,6 @@
     b->a2 = b2 /a0;
     b->a3 = a1 /a0;
     b->a4 = a2 /a0;
-    
-    /* zero initial samples */
-    b->x1 = b->x2 = 0;
-    b->y1 = b->y2 = 0;
 }
 
 -(void) process:(Float64*)buffer:(UInt32)num_samples
