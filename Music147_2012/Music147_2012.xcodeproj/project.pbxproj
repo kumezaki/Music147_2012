@@ -29,6 +29,7 @@
 		217658E815431252007240DF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217658E715431252007240DF /* AudioToolbox.framework */; };
 		217658EA15431264007240DF /* Music147.aif in Resources */ = {isa = PBXBuildFile; fileRef = 217658E915431264007240DF /* Music147.aif */; };
 		217D7784156416E700368F9E /* AQRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 217D7782156416E700368F9E /* AQRecorder.m */; };
+		218BBDC9156DFD5500CAF625 /* Effect_Delay.m in Sources */ = {isa = PBXBuildFile; fileRef = 218BBDC8156DFD5500CAF625 /* Effect_Delay.m */; };
 		21DACACA156D217900FA81BB /* Voice_Wavetable.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DACAC9156D217900FA81BB /* Voice_Wavetable.m */; };
 		21DACACE156D2E0D00FA81BB /* Envelope.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DACACD156D2E0D00FA81BB /* Envelope.m */; };
 		21DACAD1156D3EB500FA81BB /* Effect.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DACAD0156D3EB500FA81BB /* Effect.m */; };
@@ -88,6 +89,8 @@
 		217658E915431264007240DF /* Music147.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Music147.aif; sourceTree = SOURCE_ROOT; };
 		217D7781156416E700368F9E /* AQRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQRecorder.h; sourceTree = "<group>"; };
 		217D7782156416E700368F9E /* AQRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQRecorder.m; sourceTree = "<group>"; };
+		218BBDC7156DFD5500CAF625 /* Effect_Delay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Effect_Delay.h; sourceTree = "<group>"; };
+		218BBDC8156DFD5500CAF625 /* Effect_Delay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Effect_Delay.m; sourceTree = "<group>"; };
 		21DACAC8156D217900FA81BB /* Voice_Wavetable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Voice_Wavetable.h; sourceTree = "<group>"; };
 		21DACAC9156D217900FA81BB /* Voice_Wavetable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Voice_Wavetable.m; sourceTree = "<group>"; };
 		21DACACC156D2E0D00FA81BB /* Envelope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Envelope.h; sourceTree = "<group>"; };
@@ -188,6 +191,8 @@
 				21DACAD0156D3EB500FA81BB /* Effect.m */,
 				21DACAD5156D463000FA81BB /* Effect_Biquad.h */,
 				21DACAD6156D463000FA81BB /* Effect_Biquad.m */,
+				218BBDC7156DFD5500CAF625 /* Effect_Delay.h */,
+				218BBDC8156DFD5500CAF625 /* Effect_Delay.m */,
 				21DACAD2156D3F7F00FA81BB /* Effect_Limiter.h */,
 				21DACAD3156D3F7F00FA81BB /* Effect_Limiter.m */,
 				21DACACC156D2E0D00FA81BB /* Envelope.h */,
@@ -380,6 +385,7 @@
 				21DACAD1156D3EB500FA81BB /* Effect.m in Sources */,
 				21DACAD4156D3F8000FA81BB /* Effect_Limiter.m in Sources */,
 				21DACAD7156D463000FA81BB /* Effect_Biquad.m in Sources */,
+				218BBDC9156DFD5500CAF625 /* Effect_Delay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
