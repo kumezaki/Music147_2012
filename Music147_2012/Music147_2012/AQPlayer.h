@@ -48,4 +48,6 @@
 
 -(void)reportElapsedTime:(Float64)elapsed_time;
 
+-(void)filterFreq:(Float64)freq;
+
 @end

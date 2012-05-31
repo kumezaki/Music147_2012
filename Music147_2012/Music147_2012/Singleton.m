@@ -8,7 +8,7 @@
 
 #import "Singleton.h"
 
-#import "AQPlayer_SF.h"
+#import "AQPlayer_Samp.h"
 #import "AQPlayer_Synth.h"
 
 @implementation Singleton
@@ -20,6 +20,7 @@
     NSLog(@"Initializing Singleton object.");
     
     aqp = [[AQPlayer_Synth alloc] init];
+    aqr = [[AQRecorder alloc] init];
     
     q = [[Sequencer alloc] init];
     [q setBpm:133];
@@ -47,11 +48,14 @@
     NSLog(@"%f %f %f",acceleration.x,acceleration.y,acceleration.z);
 }
 
--(void)touchX:(Float64)x
+-(void)touchXVal:(Float64)val
 {
-    NSLog(@"touchX %lf",x);
+    [aqp filterFreq:val*5000.];
+}
 
-    [(AQPlayer_Synth*)aqp filterFreq:x*5000.];
+-(void)sliderVal:(Float64)val
+{
+    [aqp filterFreq:val*5000.];
 }
 
 @end

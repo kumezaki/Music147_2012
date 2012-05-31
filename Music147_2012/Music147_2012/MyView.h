@@ -16,12 +16,16 @@
     IBOutlet UIButton* button2;
     IBOutlet UIButton* button3;
     IBOutlet UIButton* button4;
+    
+    IBOutlet UISlider* slider;
 }
 
 -(IBAction)toggleVoice0:(id)sender;
 -(IBAction)toggleVoice1:(id)sender;
 -(IBAction)toggleVoice2:(id)sender;
 -(IBAction)toggleVoice3:(id)sender;
+
+-(IBAction)doSlider:(id)sender;
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event;

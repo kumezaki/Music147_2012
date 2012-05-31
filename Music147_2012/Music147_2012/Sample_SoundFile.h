@@ -1,27 +1,28 @@
 //
-//  SoundFile.h
-//  MInC
+//  Sample_SoundFile.h
+//  Music147_2012
 //
-//  Created by Kojiro Umezaki on 6/2/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
+//  Created by Kojiro Umezaki on 5/30/12.
+//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <AudioToolbox/AudioToolbox.h>
+
+#import "Sample.h"
 
 /* the maximum number of samples we can read at one time */
 #define kMaxIOBufferSamples	1024
 
-@interface SoundFile : NSObject {
+@interface Sample_SoundFile : Sample {
 
     /* a kind of system pointer to the audio file */
-	AudioFileID		fileID;
+    AudioFileID		fileID;
 
     /* the buffer which will contain data read from the audio file */
-	SInt16			fileBuffer[kMaxIOBufferSamples];
-	
+    SInt16			fileBuffer[kMaxIOBufferSamples];
+
     /* the index where the next read in the file will happen  */
-	Float64			filePos;
+    Float64			filePos;
 }
 
 /* calling this will read the next buffer of samples */

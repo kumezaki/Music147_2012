@@ -67,6 +67,8 @@
 
 -(void) biQuad_set:(int)type:(Float64)dbGain:(Float64)freq:(Float64)srate:(Float64)bandwidth
 {
+    if (freq <= 0.) return;
+    
     Float64 A, omega, sn, cs, alpha, beta;
     Float64 a0, a1, a2, b0, b1, b2;
 

@@ -121,30 +121,11 @@ void AQRecBufferCallback (void                                *inUserData,
 	return result;
 }
 
--(void)play
-{
-	playing = YES;
-	readPos = 0;
-	
-	[aqp start];
-}
-
 -(void)saveAudioBuffer:(Float64*)buffer:(UInt32)num_samples
 {
 //	NSLog(@"saveAudioBuffer %ld",writePos);
 	for (int i = 0; i < num_samples && writePos < kMaxRecBufferSize; i++)
 		audioBuffer[writePos++] = buffer[i];
-}
-
--(void)fillAudioBuffer:(Float64*)buffer:(UInt32)num_samples;
-{
-	if (!playing) return;
-	
-//	NSLog(@"fillAudioBuffer %ld",readPos);
-	for (int i = 0; i < num_samples && readPos < writePos; i++)
-		buffer[i] = audioBuffer[readPos++];
-
-	if (readPos >= writePos) playing = NO;
 }
 
 @end

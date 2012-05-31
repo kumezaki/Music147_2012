@@ -1,18 +1,19 @@
 //
-//  AQPlayer_SF.h
-//  MySecondApp
+//  AQPlayer_Samp.h
+//  Music147_2012
 //
-//  Created by Kojiro Umezaki on 4/18/12.
+//  Created by Kojiro Umezaki on 5/30/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
 #import "AQPlayer.h"
-#import "SoundFile.h"
+#import "Sample.h"
 
-@interface AQPlayer_SF : AQPlayer {
-    SoundFile* sf;
+@interface AQPlayer_Samp : AQPlayer {
+    Sample* sample;
 }
 
 -(void)fillAudioBuffer:(Float64*)buffer:(UInt32)num_samples;
+
 
 @end

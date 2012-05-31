@@ -145,6 +145,9 @@ void AQBufferCallback(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRef 
     [gSing updateTime:elapsed_time];
 }
 
-
+-(void)filterFreq:(Float64)freq
+{
+    /* do nothing in the parent class */
+}
 
 @end

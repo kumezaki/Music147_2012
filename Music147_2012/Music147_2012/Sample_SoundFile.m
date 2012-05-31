@@ -1,14 +1,14 @@
 //
-//  SoundFile.m
-//  MInC
+//  Sample_SoundFile.m
+//  Music147_2012
 //
-//  Created by Kojiro Umezaki on 6/2/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
+//  Created by Kojiro Umezaki on 5/30/12.
+//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "SoundFile.h"
+#import "Sample_SoundFile.h"
 
-@implementation SoundFile
+@implementation Sample_SoundFile
 
 -(id)init
 {
@@ -17,7 +17,7 @@
     /* get a path to the sound file */
     /* note that the file name and file extension are set here */
 	CFURLRef mSoundFileURLRef = CFBundleCopyResourceURL(CFBundleGetMainBundle(),CFSTR("Music147"),CFSTR("aif"),NULL);
-
+    
 	/* open the file and get the fileID */
 	OSStatus result = noErr;
 	result = AudioFileOpenURL(mSoundFileURLRef,kAudioFileReadPermission,0,&fileID);
@@ -43,15 +43,15 @@
 	UInt32 ioNumPackets = num_buf_samples;
 	SInt64 inStartingPacket = (SInt64)filePos; /* convert float to int */
 	UInt32 outNumBytes = 0;
-
+    
     /* read some data */
 	OSStatus result = AudioFileReadPackets(fileID,NO,&outNumBytes,NULL,inStartingPacket,&ioNumPackets,fileBuffer);
 	if (result != noErr)
 		NSLog(@"AudioFileReadPackets exception %ld",result);
-
+    
     /* advance the member variable filePos to know where to read from next time this method is called */
 	filePos += ioNumPackets;
-
+    
 	/* convert the buffer of sample read from sound file into the app's internal audio buffer */
 	for (UInt32 buf_pos = 0; buf_pos < num_buf_samples; buf_pos++)
 	{

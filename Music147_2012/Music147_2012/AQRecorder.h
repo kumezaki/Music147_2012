@@ -24,11 +24,12 @@
 	AudioQueueBufferRef			buffers[kNumberBuffers];
 	AudioStreamBasicDescription	dataFormat;
 	
-	Float64	audioBuffer[kMaxRecBufferSize];
-	UInt32	readPos;
 	UInt32	writePos;
 	
 	BOOL	playing;
+
+@public
+	Float64	audioBuffer[kMaxRecBufferSize];
 }
 
 -(void)setup;
@@ -36,10 +37,6 @@
 -(OSStatus)start;
 -(OSStatus)stop;
 
--(void)play;
-
 -(void)saveAudioBuffer:(Float64*)buffer:(UInt32)num_samples;
-
--(void)fillAudioBuffer:(Float64*)buffer:(UInt32)num_samples;
 
 @end

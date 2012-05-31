@@ -9,6 +9,7 @@
 #import "MyView.h"
 
 #import "AQPlayer.h"
+#import "AQPlayer_Synth.h"
 #import "Singleton.h"
 
 extern AQPlayer *aqp;
@@ -31,6 +32,8 @@ extern Singleton* gSing;
     [button2 setTitle:@"2" forState:UIControlStateNormal];
     [button3 setTitle:@"3" forState:UIControlStateNormal];
     [button4 setTitle:@"4" forState:UIControlStateNormal];
+    
+    slider.value = 1.0;
 }
 
 /*
@@ -66,6 +69,11 @@ extern Singleton* gSing;
     [aqp voiceToggle:3];
 }
 
+-(IBAction)doSlider:(id)sender
+{
+    [gSing sliderVal:slider.value];
+}
+
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     NSLog(@"%d",touches.count);
@@ -74,7 +82,7 @@ extern Singleton* gSing;
         CGPoint pt = [t locationInView:self];
 //        NSLog(@"%lf,%lf,%lf,%lf",pt.x,pt.y,self.bounds.size.width,self.bounds.size.height);
         NSLog(@"%lf,%lf",pt.x/self.bounds.size.width,pt.y/self.bounds.size.height);
-        [gSing touchX:pt.x/self.bounds.size.width];
+        [gSing touchXVal:pt.x/self.bounds.size.width];
         touch = t;
     }
     NSLog(@"%lf",event.timestamp);
@@ -89,7 +97,7 @@ extern Singleton* gSing;
         CGPoint pt = [t locationInView:self];
 //        NSLog(@"%lf,%lf,%lf,%lf",pt.x,pt.y,self.bounds.size.width,self.bounds.size.height);
         NSLog(@"%lf,%lf",pt.x/self.bounds.size.width,pt.y/self.bounds.size.height);
-        [gSing touchX:pt.x/self.bounds.size.width];
+        [gSing touchXVal:pt.x/self.bounds.size.width];
         touch = t;
     }
     NSLog(@"%lf",event.timestamp);
@@ -104,7 +112,7 @@ extern Singleton* gSing;
         CGPoint pt = [t locationInView:self];
 //        NSLog(@"%lf,%lf,%lf,%lf",pt.x,pt.y,self.bounds.size.width,self.bounds.size.height);
         NSLog(@"%lf,%lf",pt.x/self.bounds.size.width,pt.y/self.bounds.size.height);
-        [gSing touchX:pt.x/self.bounds.size.width];
+        [gSing touchXVal:pt.x/self.bounds.size.width];
         touch = nil;
     }
     NSLog(@"%lf",event.timestamp);

@@ -34,13 +34,13 @@
         if (fabs(table[i]) > max)
             max = fabs(table[i]);
     }
-    NSLog(@"MAX: %f",max);
+//    NSLog(@"MAX: %f",max);
     
     /* scale table by maximum value (i.e. normalize) */
     for (UInt16 i = 0; i < kWaveTableSize; i++)
     {
         table[i] = table[i] / max;
-        NSLog(@"%d %f",i,table[i]);
+//        NSLog(@"%d %f",i,table[i]);
     }
 
     return self;
