@@ -44,6 +44,10 @@
 		21DBF71415542FCE00533377 /* Voice_Synth.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DBF70D15542FCE00533377 /* Voice_Synth.m */; };
 		21DBF71515542FCE00533377 /* Voice.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DBF70F15542FCE00533377 /* Voice.m */; };
 		21DBF71D1554313000533377 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DBF71C1554313000533377 /* MyView.m */; };
+		21ED5A0D157AAAF5008470C4 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21ED5A0B157AAAF5008470C4 /* FirstViewController.m */; };
+		21ED5A0E157AAAF5008470C4 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21ED5A0C157AAAF5008470C4 /* FirstViewController.xib */; };
+		21ED5A13157AB107008470C4 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21ED5A11157AB106008470C4 /* SecondViewController.m */; };
+		21ED5A14157AB107008470C4 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21ED5A12157AB107008470C4 /* SecondViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +125,12 @@
 		21DBF70F15542FCE00533377 /* Voice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Voice.m; sourceTree = "<group>"; };
 		21DBF71B1554313000533377 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
 		21DBF71C1554313000533377 /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
+		21ED5A0A157AAAF5008470C4 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		21ED5A0B157AAAF5008470C4 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		21ED5A0C157AAAF5008470C4 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		21ED5A10157AB106008470C4 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		21ED5A11157AB106008470C4 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		21ED5A12157AB107008470C4 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +213,9 @@
 				21DACAD3156D3F7F00FA81BB /* Effect_Limiter.m */,
 				21DACACC156D2E0D00FA81BB /* Envelope.h */,
 				21DACACD156D2E0D00FA81BB /* Envelope.m */,
+				21ED5A0A157AAAF5008470C4 /* FirstViewController.h */,
+				21ED5A0B157AAAF5008470C4 /* FirstViewController.m */,
+				21ED5A0C157AAAF5008470C4 /* FirstViewController.xib */,
 				21DBF71B1554313000533377 /* MyView.h */,
 				21DBF71C1554313000533377 /* MyView.m */,
 				21DBF70415542FCE00533377 /* Note.h */,
@@ -213,6 +226,9 @@
 				21B6137D15773A8A000C786D /* Sample_Recorder.m */,
 				21B613791577395D000C786D /* Sample_SoundFile.h */,
 				21B6137A1577395D000C786D /* Sample_SoundFile.m */,
+				21ED5A10157AB106008470C4 /* SecondViewController.h */,
+				21ED5A11157AB106008470C4 /* SecondViewController.m */,
+				21ED5A12157AB107008470C4 /* SecondViewController.xib */,
 				21DBF70615542FCE00533377 /* Sequence.h */,
 				21DBF70715542FCE00533377 /* Sequence.m */,
 				21DBF70815542FCE00533377 /* Sequencer.h */,
@@ -340,6 +356,8 @@
 				217658EA15431264007240DF /* Music147.aif in Resources */,
 				2104C1061554FAD000E0DA9B /* ViewController_iPhone.xib in Resources */,
 				2104C10C1554FCA900E0DA9B /* ViewController_iPad.xib in Resources */,
+				21ED5A0E157AAAF5008470C4 /* FirstViewController.xib in Resources */,
+				21ED5A14157AB107008470C4 /* SecondViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +416,8 @@
 				21B6137815773913000C786D /* Sample.m in Sources */,
 				21B6137B1577395D000C786D /* Sample_SoundFile.m in Sources */,
 				21B6137E15773A8A000C786D /* Sample_Recorder.m in Sources */,
+				21ED5A0D157AAAF5008470C4 /* FirstViewController.m in Sources */,
+				21ED5A13157AB107008470C4 /* SecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
