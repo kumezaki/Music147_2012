@@ -23,7 +23,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    [self loadFirstView:nil];
+    [self loadMainView:nil];
 }
 
 - (void)viewDidUnload
@@ -65,20 +65,21 @@
 
 -(void)clearView
 {
-    if (firstViewController.view.superview) [firstViewController.view removeFromSuperview];
-    else if (secondViewController.view.superview) [secondViewController.view removeFromSuperview];
+    if (mainViewController.view.superview) [mainViewController.view removeFromSuperview];
+    else if (tableViewController.view.superview) [tableViewController.view removeFromSuperview];
 }
 
--(IBAction)loadFirstView:(id)sender
+-(IBAction)loadMainView:(id)sender
 {
     [self clearView];
-    [self.view insertSubview:firstViewController.view atIndex:0];
+    [self.view insertSubview:mainViewController.view atIndex:0];
 }
 
--(IBAction)loadSecondView:(id)sender
+-(IBAction)loadTableView:(id)sender
 {
     [self clearView];
-    [self.view insertSubview:secondViewController.view atIndex:0];
+    [[tableViewController view] setFrame:CGRectMake(10,45,300,200)];
+    [self.view insertSubview:tableViewController.view atIndex:0];
 }
 
 @end

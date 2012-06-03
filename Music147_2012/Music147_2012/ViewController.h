@@ -9,12 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController {
-    IBOutlet UIViewController* firstViewController;
-    IBOutlet UIViewController* secondViewController;
+    IBOutlet UIViewController* mainViewController;
+    IBOutlet UITableViewController* tableViewController;
 }
 
 -(void) clearView;
--(IBAction)loadFirstView:(id)sender;
--(IBAction)loadSecondView:(id)sender;
+-(IBAction)loadMainView:(id)sender;
+-(IBAction)loadTableView:(id)sender;
 
 @end
