@@ -7,6 +7,7 @@
 //
 
 #import "AQPlayer_Samp.h"
+#import "Sample_Recorder.h"
 #import "Sample_SoundFile.h"
 
 @implementation AQPlayer_Samp

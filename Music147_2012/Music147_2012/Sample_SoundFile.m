@@ -39,8 +39,11 @@
 
 -(void)fillSampleBuffer:(Float64*)buffer:(UInt32)num_buf_samples
 {
+    Float64 pitch = 2.0;
+    
     /* set up arguments needed by AudioFileReadPackets */
-	UInt32 ioNumPackets = num_buf_samples;
+    UInt32 numReadPackets = num_buf_samples * pitch;
+	UInt32 ioNumPackets = numReadPackets;
 	SInt64 inStartingPacket = (SInt64)filePos; /* convert float to int */
 	UInt32 outNumBytes = 0;
     
@@ -49,7 +52,7 @@
 	if (result != noErr)
 		NSLog(@"AudioFileReadPackets exception %ld",result);
     
-    if (ioNumPackets < num_buf_samples)
+    if (ioNumPackets < numReadPackets)
         /* reset the filePos value to 0 to loop back to the beginning of the sound file */
         filePos = 0;
     else
@@ -59,7 +62,7 @@
 	/* convert the buffer of sample read from sound file into the app's internal audio buffer */
 	for (UInt32 buf_pos = 0; buf_pos < num_buf_samples; buf_pos++)
 	{
-		Float64 s = (SInt16)CFSwapInt16BigToHost(fileBuffer[buf_pos]);
+		Float64 s = (SInt16)CFSwapInt16BigToHost(fileBuffer[(UInt32)(buf_pos * pitch)]);
 		buffer[buf_pos] += s / INT16_MAX;
 	}
 }
