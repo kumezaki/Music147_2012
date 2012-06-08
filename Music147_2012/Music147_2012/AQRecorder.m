@@ -91,8 +91,6 @@ void AQRecBufferCallback (void                                *inUserData,
 
 -(OSStatus)start
 {
-	[aqp stop];
-
 	OSStatus result = noErr;
 	
 	writePos = 0;
@@ -116,8 +114,6 @@ void AQRecBufferCallback (void                                *inUserData,
 	
     result = AudioQueueStop(queue, true);
 	
-	[aqp start];
-
 	return result;
 }
 

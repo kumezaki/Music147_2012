@@ -59,7 +59,7 @@ void AQBufferCallback(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRef 
     
 	aqp = self;
 	
-	[self start];
+//	[self start];
     
 	return self;
 }
@@ -112,6 +112,10 @@ void AQBufferCallback(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRef 
     result = AudioQueueStop(queue, true);
 	
 	return result;
+}
+
+-(void)resetStartPos
+{
 }
 
 -(void)fillAudioBuffer:(Float64*)buffer:(UInt32)num_samples

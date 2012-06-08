@@ -29,7 +29,7 @@
     Sequence* seq = [[Sequence alloc] init];
     [q setSeq:seq];
     
-    [[UIAccelerometer sharedAccelerometer] setDelegate:self];
+//    [[UIAccelerometer sharedAccelerometer] setDelegate:self];
     
     return self;
 }
@@ -45,7 +45,7 @@
 
 -(void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration
 {
-    NSLog(@"%f %f %f",acceleration.x,acceleration.y,acceleration.z);
+    NSLog(@"Singleton %f %f %f",acceleration.x,acceleration.y,acceleration.z);
 }
 
 -(void)touchXVal:(Float64)val

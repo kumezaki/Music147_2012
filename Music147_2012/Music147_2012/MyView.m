@@ -10,9 +10,11 @@
 
 #import "AQPlayer.h"
 #import "AQPlayer_Synth.h"
+#import "AQRecorder.h"
 #import "Singleton.h"
 
 extern AQPlayer *aqp;
+extern AQRecorder *aqr;
 extern Singleton* gSing;
 
 @implementation MyView
@@ -34,6 +36,8 @@ extern Singleton* gSing;
     [button4 setTitle:@"4" forState:UIControlStateNormal];
     
     slider.value = 1.0;
+
+    [[UIAccelerometer sharedAccelerometer] setDelegate:self];
 }
 
 /*
@@ -72,6 +76,27 @@ extern Singleton* gSing;
 -(IBAction)doSlider:(id)sender
 {
     [gSing sliderVal:slider.value];
+}
+
+-(IBAction)startPlay:(id)sender
+{
+    [aqp resetStartPos];
+    [aqp start];
+}
+
+-(IBAction)stopPlay:(id)sender
+{
+    [aqp stop];
+}
+
+-(IBAction)startRec:(id)sender
+{
+    [aqr start];
+}
+
+-(IBAction)stopRec:(id)sender
+{
+    [aqr stop];
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
@@ -132,6 +157,11 @@ extern Singleton* gSing;
     CGPoint pt = [touch locationInView:self];
     
     UIRectFill(CGRectMake(pt.x-50., pt.y-50., 100.0, 100.0));
+}
+
+-(void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration
+{
+    NSLog(@"MyView %f %f %f",acceleration.x,acceleration.y,acceleration.z);
 }
 
 @end

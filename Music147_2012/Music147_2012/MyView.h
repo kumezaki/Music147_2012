@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MyView : UIView {
+@interface MyView : UIView <UIAccelerometerDelegate> {
 
     UITouch* touch;
     
@@ -26,6 +26,11 @@
 -(IBAction)toggleVoice3:(id)sender;
 
 -(IBAction)doSlider:(id)sender;
+
+-(IBAction)startPlay:(id)sender;
+-(IBAction)stopPlay:(id)sender;
+-(IBAction)startRec:(id)sender;
+-(IBAction)stopRec:(id)sender;
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event;

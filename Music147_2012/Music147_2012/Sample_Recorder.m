@@ -14,6 +14,11 @@ extern AQRecorder *aqr;
 
 @implementation Sample_Recorder
 
+-(void)resetStartPos
+{
+    readPos = 0;
+}
+
 -(void)fillSampleBuffer:(Float64*)buffer:(UInt32)num_buf_samples
 {
     /* To avoid a crash, ensure we're not accessing beyond the audioBuffer array. */

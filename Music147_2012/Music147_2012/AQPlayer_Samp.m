@@ -16,9 +16,14 @@
 {
     self = [super init];
     
-    sample = [[Sample_SoundFile alloc] init];
+    sample = [[Sample_Recorder alloc] init];
     
 	return self;
+}
+
+-(void)resetStartPos
+{
+    [sample resetStartPos];
 }
 
 -(void)fillAudioBuffer:(Float64*)buffer:(UInt32)num_samples

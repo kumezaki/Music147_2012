@@ -40,6 +40,8 @@
 -(OSStatus)start;
 -(OSStatus)stop;
 
+-(void)resetStartPos;
+
 -(void)fillAudioBuffer:(Float64*)buffer:(UInt32)num_samples;
 
 -(Voice*)getFreeVoice;
