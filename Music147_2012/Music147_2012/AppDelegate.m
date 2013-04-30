@@ -10,10 +10,10 @@
 
 #import "ViewController.h"
 
-@implementation AppDelegate
-
 #import "Singleton.h"
 Singleton* gSing = nil;
+
+@implementation AppDelegate
 
 @synthesize window = _window;
 @synthesize viewController = _viewController;
